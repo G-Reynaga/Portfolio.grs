@@ -1,54 +1,44 @@
-# Astro Starter Kit: Basics
+# Bienvenido 🖐🏻
 
-```sh
-npm create astro@latest -- --template basics
-```
+> [!WARNING]
+> ⚠️ **¡Espera un Momento!**: Antes de elegirme, ten en cuenta que mi dedicación implica que no me conformo con lo convencional. Puedes esperar soluciones que desafíen la norma y aporten algo único. Así que, si buscas algo diferente, ¡estás en el lugar correcto!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+# Portfolio - REYNAGA
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+¡Bienvenido a mi portfolio personal! Este sitio web ha sido desarrollado utilizando Bootstrap para asegurar una experiencia de usuario moderna y receptiva. Además, he incorporado efectos de desplazamiento (scroll reveal) para hacer la navegación más dinámica y atractiva. Utilizo Font Awesome para añadir íconos elegantes que complementan la presentación de mi perfil, tecnologías destacadas, proyectos realizados y la información de contacto.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+> [!TIP]
+> 💡 **Consejo del Portfolio:** Explora los proyectos en detalle. Cada proyecto no solo muestra mis habilidades técnicas, sino también el proceso creativo y las soluciones a desafíos específicos. ¡No dudes en sumergirte en los detalles y descubrir más sobre mi enfoque en el desarrollo de software!
 
-## 🚀 Project Structure
+# Secciones del Portfolio
 
-Inside of your Astro project, you'll see the following folders and files:
+* **Perfil:** Descubre quién soy, mi experiencia, habilidades y motivación en el campo tecnológico.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+* **Tecnologías:** Explora las tecnologías con las que trabajo y en las que me especializo.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+* **Proyectos:** Conoce más sobre los proyectos que he desarrollado. Cada proyecto incluye detalles sobre su propósito, tecnologías utilizadas y enlaces relevantes.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+* **Contacto:** ¿Interesado en colaborar o simplemente saludar? Encuentra aquí mis detalles de contacto.
 
-Any static assets, like images, can be placed in the `public/` directory.
+> [!CAUTION]
+> 🚨 **¡Cuidado!**: Al seleccionarme, prepárate para mejoras continuas. Mi compromiso es evolucionar constantemente y ofrecerte soluciones cada vez más sorprendentes. ¡Estamos en este viaje juntos, así que asegúrate de disfrutar del emocionante viaje de la mejora continua!
 
-## 🧞 Commands
+# Características 
+* **Diseño Responsivo:** Gracias a Bootstrap, mi portfolio se adapta a distintos dispositivos, garantizando una experiencia consistente y agradable para todos los visitantes.
+* **Scroll Reveal:** La navegación se vuelve interactiva con efectos de desplazamiento que revelan de manera gradual la información a medida que el usuario explora el contenido.
+* **Iconos Atractivos:** Font Awesome agrega un toque visual atractivo mediante íconos modernos y estilizados que realizan la presentación de mi perfil, tecnologías, proyectos y datos de contacto.
 
-All commands are run from the root of the project, from a terminal:
+> [!IMPORTANT]
+> 🎯 **Compromiso Firme:** Siempre estoy dispuesto a dar lo mejor de mí. Cada proyecto refleja mi dedicación y enfoque para superar desafíos. Estoy apasionado por alcanzar la excelencia y crear soluciones impactantes. ¡Tu confianza en mi trabajo es mi mayor motivación!
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+ # Tecnologías Aprendidas
+ 
+ * **HTML5**
+ * **CSS3**
+ * **JavaScript**
+ * **React**
+ * **Postgres**
+ * **Redux**
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+> [!NOTE]
+> 🚀 Nota a destacar: Mi viaje en el mundo tecnológico está en constante evolución, y estoy emocionado por aprender y dominar nuevas tecnologías. Si encuentras áreas en las que pueda mejorar o tienes sugerencias para mi crecimiento, ¡estaré encantado de recibir tu feedback constructivo! La mejora continua es fundamental en mi enfoque hacia el desarrollo y la innovación.
