@@ -1,0 +1,54 @@
+---
+const personalImageAlt = "Gerson Reynaga";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import WhatsappIcon from "./icons/Whatsapp.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import { Image } from "astro:assets";
+import me from "../../public/me.jpg"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <Image
+      class="rounded-full shadow-lg size-16"
+      src={me}
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/midudev"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center md:justify-center"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Reynaga
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 dark:[&>span]:text-red-300 [&>span]:text-red-500 [&>span]:font-semibold"
+  >
+    <strong>Desarrollador web</strong>, en busca de un puesto desafiante donde
+    pueda compartir lo aprendido y a la vez
+    <span>continuar sumando conocimientos</span>.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:gerson.reynaga23@gmail.com">
+      <MailIcon class="size-5" />
+      Gmail
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/gerson-reynaga/">
+      <LinkedInIcon class="size-5" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://wa.me/51977177849">
+      <WhatsappIcon class="size-5" />
+      Contáctame
+    </SocialPill>
+  </nav>
+</div>
