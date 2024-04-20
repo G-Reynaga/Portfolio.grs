@@ -3,6 +3,7 @@ import "@fontsource-variable/onest";
 
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ButtonUp from "@/components/ButtonUp.astro"
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
@@ -31,13 +32,14 @@ const { description, title } = Astro.props;
 
   <body class="relative text-black dark:text-white">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-400 dark:bg-gray-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
       dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
     >
     </div>
     <Header />
     <slot />
+    <ButtonUp />
     <Footer />
     <style is:global>
       :root {
@@ -56,6 +58,32 @@ const { description, title } = Astro.props;
         min-height: 100vh;
         overscroll-behavior: none;
       }
+
+      @supports selector(::-webkit-scrollbar) {
+				::-webkit-scrollbar {
+					width: 10px;
+					border-radius: 10px;
+				}
+
+				::-webkit-scrollbar-thumb {
+					border-radius: 10px;
+					background-color: rgb(199, 199, 199);
+					border: 2px solid transparent;
+					background-clip: content-box;
+				}
+
+				::-webkit-scrollbar-thumb:active {
+					background-color: #353535;
+				}
+
+				::-webkit-scrollbar-track {
+					background: #353535;
+				}
+
+				::-webkit-scrollbar-corner {
+					background: #353535;
+				}
+			}
 
       @media (prefers-reduced-motion: reduce) {
         html {

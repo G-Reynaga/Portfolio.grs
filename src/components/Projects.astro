@@ -13,7 +13,7 @@ import LinkButton from "./LinkButton.astro";
 const TAGS = {
   NEXT: {
     name: "Next.js",
-    class: "bg-black text-white",
+    class: "bg-[#161A30] text-white",
     icon: NextJS,
   },
   REACT: {
@@ -91,7 +91,7 @@ const PROJECTS = [
               {tags.map((tag) => (
                 <li>
                   <span
-                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-4 `}
                   >
                     <tag.icon class="size-4" />
                     {tag.name}
