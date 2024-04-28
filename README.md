@@ -1,5 +1,7 @@
 # Bienvenido 🖐🏻
 
+![imagen-portfolio](https://github.com/G-Reynaga/Portfolio.grs/assets/98990484/066e1c3b-6290-4e0f-9ec4-540cf70004f3)
+
 > [!WARNING]
 > ⚠️ **¡Espera un Momento!**: Antes de elegirme, ten en cuenta que mi dedicación implica que no me conformo con lo convencional. Puedes esperar soluciones que desafíen la norma y aporten algo único. Así que, si buscas algo diferente, ¡estás en el lugar correcto!
 
