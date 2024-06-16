@@ -9,6 +9,8 @@ import Redux from "./icons/Redux.astro";
 import TypeScript from "./icons/Typescript.astro";
 import NestJS from "./icons/NestJS.astro";
 import LinkButton from "./LinkButton.astro";
+import Node from "./icons/Node.astro";
+import Express from "./icons/Express.astro";
 
 const TAGS = {
   NEXT: {
@@ -42,28 +44,39 @@ const TAGS = {
     icon: TypeScript,
   },
   NEST: {
-    name: "Nest,js",
+    name: "Nest.js",
     class: "bg-[#5D0E41] text-white",
     icon: NestJS,
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-[#004225] text-white",
+    icon: Node,
+  },
+  EXPRESS: {
+    name: "Express",
+    class: "bg-[#151515]",
+    icon: Express,
   },
 };
 const PROJECTS = [
   {
-    title: "Cobox",
-    description:
-      "Plataforma diseñada para simplificar el proceso de contratación de repartidores por parte de comercios para la entrega de pedidos. Desarrollada utilizando tecnologías como Next.js, React y TypeScript",
+    title: "Cobox Logistic",
+    description: `Cobox logistic es una innovadora plataforma de logística creada para simplificar y optimizar el proceso de contratación de repartidores por parte de comercios y empresas.
+    La plataforma permite a los comercios gestionar sus entregas de manera eficiente, 
+    conectándolos con una red de repartidores disponibles en tiempo real.`,
     link: "https://www.coboxlogistic.com/",
     image: "/projects/cobox.webp",
     tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.NEST],
   },
   {
     title: "The Wave",
-    description:
-      "Ecommerce enfocada para la venta de productos para el surfeo. Creado desde cero con React, Redux y CSS.",
+    description: `The Wave es una plataforma de ecommerce diseñada específicamente para los entusiastas del surf, 
+    ofreciendo una amplia gama de productos que incluyen tablas de surf, aletas, trajes de neopreno, y otros accesorios relacionados.`,
     link: "https://proyecto-the-wave-client-1kip.vercel.app/",
     github: "https://github.com/Fiorellafrini/Proyecto_TheWave_client",
     image: "/projects/the_wave.webp",
-    tags: [TAGS.REACT, TAGS.CSS, TAGS.REDUX],
+    tags: [TAGS.REACT, TAGS.CSS, TAGS.REDUX, TAGS.NODE, TAGS.EXPRESS],
   },
 ];
 ---
@@ -72,7 +85,7 @@ const PROJECTS = [
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-        <div class="w-full md:w-1/2">
+        <div class="w-full md:w-1/2 content-center">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
               alt="Imagenes de Projectos"
@@ -87,7 +100,7 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-row mb-2 gap-2 flex-wrap">
               {tags.map((tag) => (
                 <li>
                   <span
