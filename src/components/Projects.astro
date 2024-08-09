@@ -1,8 +1,9 @@
 ---
 import GitHub from "./icons/GitHub.astro";
+import Link from "./icons/Link.astro";
+import Play from "./icons/PLay.astro";
 import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
-import Link from "./icons/Link.astro";
 import Css from "./icons/Css.astro";
 import React from "./icons/React.astro";
 import Redux from "./icons/Redux.astro";
@@ -55,7 +56,7 @@ const TAGS = {
   },
   EXPRESS: {
     name: "Express",
-    class: "bg-[#151515]",
+    class: "bg-[#151515] text-white",
     icon: Express,
   },
 };
@@ -74,8 +75,19 @@ const PROJECTS = [
     description: `The Wave es una plataforma de ecommerce diseñada específicamente para los entusiastas del surf, 
     ofreciendo una amplia gama de productos que incluyen tablas de surf, aletas, trajes de neopreno, y otros accesorios relacionados.`,
     link: "https://proyecto-the-wave-client-1kip.vercel.app/",
-    github: "https://github.com/Fiorellafrini/Proyecto_TheWave_client",
+    github: "https://github.com/G-Reynaga/Proyecto_TheWave_client",
+    video: "https://vimeo.com/825269857",
     image: "/projects/the_wave.webp",
+    tags: [TAGS.REACT, TAGS.CSS, TAGS.REDUX, TAGS.NODE, TAGS.EXPRESS],
+  },
+  {
+    title: "Poke API",
+    description: `Proyecto donde se realizo el consumo de la API pokeApi en la cual tiene como incio un landing page luego se podra ver las cards, 
+    se logra hacer busquedas hasta hay un formulario para poder agregar un 'pokemon' nuevo`,
+    link: "https://reynaga-pi-pokemon.vercel.app/",
+    github: "https://github.com/G-Reynaga/PI-Pokemon",
+    video: "https://vimeo.com/825124626?share=copy",
+    image: "/projects/PI_Pokemon.webp",
     tags: [TAGS.REACT, TAGS.CSS, TAGS.REDUX, TAGS.NODE, TAGS.EXPRESS],
   },
 ];
@@ -83,7 +95,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github, video }) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2 content-center">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -127,6 +139,12 @@ const PROJECTS = [
                 <LinkButton href={link}>
                   <Link class="size-4" />
                   Preview
+                </LinkButton>
+              )}
+              {video && (
+                <LinkButton href={video}>
+                  <Play class="size-6" />
+                  Video
                 </LinkButton>
               )}
             </footer>
