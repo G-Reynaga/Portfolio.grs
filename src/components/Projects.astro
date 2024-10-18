@@ -12,8 +12,14 @@ import NestJS from "./icons/NestJS.astro";
 import LinkButton from "./LinkButton.astro";
 import Node from "./icons/Node.astro";
 import Express from "./icons/Express.astro";
+import AstroLogo from "@/components/icons/AstroLogo.astro";
 
 const TAGS = {
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#2E073F] text-white",
+    icon: AstroLogo,
+  },
   NEXT: {
     name: "Next.js",
     class: "bg-[#161A30] text-white",
@@ -61,6 +67,14 @@ const TAGS = {
   },
 };
 const PROJECTS = [
+  {
+    title: "LetyMind",
+    description: "Este proyecto es un clon de la página oficial de LetyMind, diseñado para replicar su estética y funcionalidad.",
+    github: "https://github.com/G-Reynaga/CloneLetyMind",
+    link: "https://clone-lety-mind.vercel.app/",
+    image: "/projects/LetyMynd.webp",
+    tags: [TAGS.ASTRO, TAGS.TYPESCRIPT],
+  },
   {
     title: "Cobox Logistic",
     description: `Cobox logistic es una innovadora plataforma de logística creada para simplificar y optimizar el proceso de contratación de repartidores por parte de comercios y empresas.
