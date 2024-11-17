@@ -13,6 +13,9 @@ import LinkButton from "./LinkButton.astro";
 import Node from "./icons/Node.astro";
 import Express from "./icons/Express.astro";
 import AstroLogo from "@/components/icons/AstroLogo.astro";
+import Zod from "./icons/Zod.astro";
+import Shadcn from "./icons/Shadcn.astro";
+import PostgreSQL from "./icons/PostgreSQL.astro";
 
 const TAGS = {
   ASTRO: {
@@ -65,24 +68,38 @@ const TAGS = {
     class: "bg-[#151515] text-white",
     icon: Express,
   },
+  ZOD: {
+    name: "Zod",
+    class: "bg-[#003159] text-white",
+    icon: Zod,
+  },
+  SHADCN: {
+    name: "Shadcn",
+    class: "bg-[#000000] text-white border border-gray-900",
+    icon: Shadcn,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#10439F] text-white",
+    icon: PostgreSQL,
+  },
 };
 const PROJECTS = [
   {
     title: "LetyMind",
-    description: "Este proyecto es un clon de la página oficial de LetyMind, diseñado para replicar su estética y funcionalidad.",
+    description: `Este proyecto es un clon de la página oficial de LetyMind, replicando su diseño y funcionalidades.`,
     github: "https://github.com/G-Reynaga/CloneLetyMind",
     link: "https://clone-lety-mind.vercel.app/",
     image: "/projects/LetyMynd.webp",
-    tags: [TAGS.ASTRO, TAGS.TYPESCRIPT],
+    tags: [TAGS.ASTRO, TAGS.TYPESCRIPT, TAGS.TAILWIND],
   },
   {
-    title: "Cobox Logistic",
-    description: `Cobox logistic es una innovadora plataforma de logística creada para simplificar y optimizar el proceso de contratación de repartidores por parte de comercios y empresas.
-    La plataforma permite a los comercios gestionar sus entregas de manera eficiente, 
-    conectándolos con una red de repartidores disponibles en tiempo real.`,
-    link: "https://www.coboxlogistic.com/",
-    image: "/projects/cobox.webp",
-    tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.NEST],
+    title: "Web page Logistic",
+    description: `Web page Logistics es una página web informativa sobre servicios de logística, desarrollada con Next.js y validaciones de formularios implementadas con Zod. Su diseño moderno, responsivo y bien organizado facilita a los usuarios acceder a información clave de manera sencilla.`,
+    github: "https://github.com/G-Reynaga/Web-Page-Logistic",
+    link: "https://web-page-logistic.vercel.app/",
+    image: "/projects/web_page_logistic.webp",
+    tags: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.ZOD, TAGS.SHADCN],
   },
   {
     title: "The Wave",
@@ -92,7 +109,14 @@ const PROJECTS = [
     github: "https://github.com/G-Reynaga/Proyecto_TheWave_client",
     video: "https://vimeo.com/825269857",
     image: "/projects/the_wave.webp",
-    tags: [TAGS.REACT, TAGS.CSS, TAGS.REDUX, TAGS.NODE, TAGS.EXPRESS],
+    tags: [
+      TAGS.REACT,
+      TAGS.CSS,
+      TAGS.REDUX,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.POSTGRESQL,
+    ],
   },
   {
     title: "Poke API",
@@ -102,7 +126,14 @@ const PROJECTS = [
     github: "https://github.com/G-Reynaga/PI-Pokemon",
     video: "https://vimeo.com/825124626?share=copy",
     image: "/projects/PI_Pokemon.webp",
-    tags: [TAGS.REACT, TAGS.CSS, TAGS.REDUX, TAGS.NODE, TAGS.EXPRESS],
+    tags: [
+      TAGS.REACT,
+      TAGS.CSS,
+      TAGS.REDUX,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.POSTGRESQL,
+    ],
   },
 ];
 ---
